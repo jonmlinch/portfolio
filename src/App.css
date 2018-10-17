@@ -1,0 +1,45 @@
+nav {
+  background-color: #171717;
+  height: 5%;
+}
+
+a {
+  color: white;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;  
+}
+
+.nav-logo{
+  width: 50%;
+}
+
+.logo {
+  width: 8%;
+  height: auto;
+  margin-left: 2%;
+  margin-top: 1%;
+  position: absolute;
+}
+
+.choices {
+  width: 50%;
+}
+
+.choices-list {
+  list-style: none;
+  margin-right: 1%;
+  display: grid;
+  grid-template-columns: repeat(4, 5em);
+  grid-gap: 1%;
+  justify-content: end;
+  justify-items: end;
+  align-items: center;
+}

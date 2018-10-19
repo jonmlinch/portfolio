@@ -1,20 +1,44 @@
 import React, { Component } from 'react';
-import Nav from './Nav'
-import TopImage from './TopImage'
-import Background from './Background'
 import IntroLogo from './IntroLogo'
+import MainPage from './MainPage'
+import { CSSTransitionGroup } from 'react-transition-group'
 import './App.css';
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      entrance: false,
+    }
+  }
+
+  componentDidMount(){
+    this.handleEntrance()
+  }
+
+  switchUp = () => {
+    this.setState({
+      entrance: true,
+    })
+  }
+
+  handleEntrance = (e) => {
+    setTimeout(this.switchUp, 4000)
+  }
   render() {
-    return (
-      <div>
-        {/* <Background /> */}
-        <Nav />
-        <IntroLogo />
-        {/* <TopImage /> */}
-      </div>
-    );
+    if (this.state.entrance === false){
+      return (
+        <div>
+          <IntroLogo key="1" />
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <MainPage key="2" />
+        </div>
+      );
+    }
   }
 }
 

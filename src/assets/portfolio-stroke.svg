@@ -6,61 +6,71 @@
         width: 50%;
         height: auto;
         opacity: 0;
-        fill: none;
+        fill: #171717;
         stroke:#fff;
-        <!-- stroke-miterlimit:10; -->
-        stroke-dasharray: 500;
+        stroke-miterlimit:10;
+        stroke-dasharray: 800;
         stroke-dashoffset: 0;
-        -webkit-animation: dash 2s linear backwards;
+        -webkit-animation: diamond 2s linear forwards;
         -o-animation: dash 2s linear forwards;
         -moz-animation: dash 2s linear forwards;
-        animation: dash 2s linear forwards;
+        animation: diamond 2s ease-in forwards;
+        animation-delay: 2s;
         }
 
         .letter {
         width: 50%;
         height: auto;
         opacity: 0;
-        fill: none;
+        fill: #171717;
         stroke:#fff;
-        <!-- stroke-miterlimit:10; -->
-        stroke-dasharray: 500;
+        stroke-miterlimit:10;
+        stroke-dasharray: 300;
         stroke-dashoffset: 0;
-        -webkit-animation: dash 3s linear backwards;
+        -webkit-animation: letters 3s linear reverse;
         -o-animation: dash 3s linear forwards;
         -moz-animation: dash 3s linear forwards;
-        animation: dash 3s linear forwards;
+        animation: letters 3s linear forwards;
         }
 
-        @-webkit-keyframes dash {
+        @-webkit-keyframes diamond {
             from {
-                stroke-dashoffset: 500;
+                stroke-dashoffset: 800;
                 opacity: 0;
             }
             to {
                 stroke-dashoffset: 0;
                 opacity: 1;
+                fill: #000
             }
         }
 
-        <!-- @-webkit-keyframes .j-letter {
+        @-webkit-keyframes letters {
             from {
+                stroke-dashoffset: 400;
                 opacity: 0;
             }
             to {
+                stroke-dashoffset: 0;
                 opacity: 1;
-                fill: #fff
+                fill: #fff;
+                stroke: #000;
             }
-        } -->
+        }
 
-        <!-- #logo.fadeit .diamond {
-            fill: #171717;
-            transition: .2s;
-        } -->
-
-        #logo.fadeit .letter {
+        <!-- .diamond:hover {
             fill: #fff;
-            transition: .8s;
+            stroke: #000;
+        }
+
+        .diamond:hover ~ #the-j{
+            fill: #000;
+            stroke: #fff;
+        } -->
+
+        .letter:hover {
+            fill: #000;
+            stroke: #fff
         }
 
         .cls-2 {

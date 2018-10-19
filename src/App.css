@@ -9,6 +9,42 @@ a {
   font-size: 105%;
 }
 
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 2000ms ease-in;
+}
+
+.fadeScratches-appear {
+  opacity: 0.01;
+}
+
+.fadeScratches-appear.fadeScratches-appear-active {
+  opacity: 0.6;
+  transition: opacity 1s ease-in;
+}
+
+.fadeScratches-leave {
+  opacity: 0.6;
+}
+
+.fadeScratches-leave.fadeScratches-leave-active {
+  opacity: 0.01;
+  transition: opacity 2000ms ease-in;
+}
+
 .intro-container {
   display: grid;
   grid-template-columns: 100%;
@@ -54,7 +90,6 @@ a {
   margin-left: 0;
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: repeat(4, 6em); */
   grid-gap: 1%;
   justify-content: space-evenly;
   justify-items: end;

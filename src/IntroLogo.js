@@ -11,6 +11,8 @@ class IntroLogo extends Component {
             <Overdrive id="big-to-small-logo" duration="100" animationDelay="1">
             <ReactCSSTransitionGroup
             transitionName="fade"
+            transitionEnter={false}
+            transitionLeave={true}
             transitionLeaveTimeout={2000}>
             <embed src={strokeLogo} />
             </ReactCSSTransitionGroup>

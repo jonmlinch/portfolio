@@ -24,7 +24,7 @@ a {
 
 .fade-leave.fade-leave-active {
   opacity: 0.01;
-  transition: opacity 2000ms ease-in;
+  transition: opacity 2000ms ease-out;
 }
 
 .fadeScratches-appear {
@@ -32,7 +32,7 @@ a {
 }
 
 .fadeScratches-appear.fadeScratches-appear-active {
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: opacity 1s ease-in;
 }
 
@@ -42,7 +42,7 @@ a {
 
 .fadeScratches-leave.fadeScratches-leave-active {
   opacity: 0.01;
-  transition: opacity 2000ms ease-in;
+  transition: opacity 2000ms ease-out;
 }
 
 .intro-container {

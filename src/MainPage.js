@@ -8,9 +8,8 @@ class MainPage extends Component {
   render() {
     return (
       <div>
-        <Background />
-        <Nav />
-        <AboutMe />
+        {/* <Background />
+        <Nav /> */}
       </div>
     );
   }

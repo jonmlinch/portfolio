@@ -1,45 +1,44 @@
 import React, { Component } from 'react';
+import { Link, BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import posed, { PoseGroup } from 'react-pose';
+import Background from './Background'
+import Nav from './Nav'
 import IntroLogo from './IntroLogo'
 import MainPage from './MainPage'
-import { CSSTransitionGroup } from 'react-transition-group'
+import AboutMe from './AboutMe'
 import './App.css';
 
+const RouteContainer = posed.div({
+  enter: { y: -30, opacity: 1, transition: {duration: 1000}},
+  exit: { y: 30, opacity: 0, transition: {duration: 1000}}
+})
+
 class App extends Component {
-  constructor(){
-    super()
-    this.state = {
-      entrance: false,
-    }
-  }
-
-  componentDidMount(){
-    this.handleEntrance()
-  }
-
-  switchUp = () => {
-    this.setState({
-      entrance: true,
-    })
-  }
-
-  handleEntrance = (e) => {
-    setTimeout(this.switchUp, 4000)
-  }
+  
   render() {
-    if (this.state.entrance === false){
-      return (
-        <div>
-          <IntroLogo key="1" />
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <MainPage key="2" />
-        </div>
-      );
-    }
+    return(
+      <Router>
+        <Route 
+          render = {({location}) => (
+            <div>
+              <Background />
+              <Nav />
+              <PoseGroup>
+                <RouteContainer key={location.pathname}>
+                  <Switch location={location}>
+                    <Route exact path="/" component={IntroLogo} key="intro" />
+                    <Route path="/home" component={MainPage} key="home" />
+                    <Route path="/about" component={AboutMe} key="about" />
+                  </Switch>
+                </RouteContainer>
+              </PoseGroup>
+            </div>
+          )}
+        />
+      </Router>
+    )
   }
 }
+
 
 export default App;

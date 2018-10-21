@@ -34,9 +34,7 @@ class IntroLogo extends Component {
             <div className="intro-container">
               <div className="intro-logo">
                 <object>
-                    <Overdrive id="big-to-small-logo" duration="100" animationDelay="1">
                     <embed src={strokeLogo} />
-                    </Overdrive>
                 </object>
               </div>
             </div>

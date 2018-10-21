@@ -9,42 +9,6 @@ a {
   font-size: 105%;
 }
 
-.fade-appear {
-  opacity: 0.01;
-}
-
-.fade-appear.fade-appear-active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
-
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-leave.fade-leave-active {
-  opacity: 0.01;
-  transition: opacity 2000ms ease-out;
-}
-
-.fadeScratches-appear {
-  opacity: 0.01;
-}
-
-.fadeScratches-appear.fadeScratches-appear-active {
-  /* opacity: 0.6; */
-  transition: opacity 1s ease-in;
-}
-
-.fadeScratches-leave {
-  opacity: 0.6;
-}
-
-.fadeScratches-leave.fadeScratches-leave-active {
-  opacity: 0.01;
-  transition: opacity 2000ms ease-out;
-}
-
 .intro-container {
   display: grid;
   grid-template-columns: 100%;
@@ -62,7 +26,7 @@ a {
 
 .navbar {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 95% 5%;
 }
 
 .top-image {
@@ -81,19 +45,6 @@ a {
   margin-top: 1vw;
   position: absolute;
   z-index: 1;
-}
-
-.choices-list {
-  list-style: none;
-  padding-right: 2%;
-  padding-left: 0;
-  margin-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  justify-items: end;
-  align-items: center;
-  position: relative;
 }
 
 .background-scratches {
@@ -129,9 +80,74 @@ a {
   margin-top: 20%;
   align-self: start;
   color: #171717;
-  z-index: 2;
+  z-index: 1;
 }
 
 .words {
   font-size: 1.25em;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+}
+
+.hamburger {
+  font-size:30px;
+  cursor:pointer;
+  color: white;
+  z-index: 2;
+}
+
+#myNav {
+  z-index: 2;
+}
+
+.material-icons {
+  margin-top: 10%;
+  font-size: 36px;
 }

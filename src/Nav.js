@@ -16,7 +16,7 @@ class Nav extends Component {
             {/* </Overdrive> */}
               <ul className="choices-list">
                   <li><Link to="/about">About |</Link></li>
-                  <li><a href="#">Projects |</a></li>
+                  <li><Link to="/projects">Projects |</Link></li>
                   <li><a href="#f">Contact |</a></li>
                   <li><a href={resume} target="_blank">Resume |</a></li>
               </ul>

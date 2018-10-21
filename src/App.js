@@ -6,6 +6,7 @@ import Nav from './Nav'
 import IntroLogo from './IntroLogo'
 import MainPage from './MainPage'
 import AboutMe from './AboutMe'
+import Projects from './Projects'
 import './App.css';
 
 const RouteContainer = posed.div({
@@ -27,6 +28,7 @@ class App extends Component {
                     <Route exact path="/" component={IntroLogo} key="intro" />
                     <Route path="/home" component={MainPage} key="home" />
                     <Route path="/about" component={AboutMe} key="about" />
+                    <Route path="/projects" component={Projects} key="projects" />
                   </Switch>
                 </RouteContainer>
               </PoseGroup>

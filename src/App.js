@@ -9,8 +9,8 @@ import AboutMe from './AboutMe'
 import './App.css';
 
 const RouteContainer = posed.div({
-  enter: { y: -30, opacity: 1, transition: {duration: 1000}},
-  exit: { y: 30, opacity: 0, transition: {duration: 1000}}
+  enter: { opacity: 1, transition: {duration: 1000}, beforeChildren: true},
+  exit: { opacity: 0, transition: {duration: 1000}}
 })
 
 class App extends Component {
@@ -21,8 +21,6 @@ class App extends Component {
         <Route 
           render = {({location}) => (
             <div>
-              <Background />
-              <Nav />
               <PoseGroup>
                 <RouteContainer key={location.pathname}>
                   <Switch location={location}>

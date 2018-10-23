@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import misty from './assets/misty-wide.jpg'
 import wisi from './assets/wisi-shot.jpg'
 import homept from './assets/homept-shot.jpg'
+import killa from './assets/killa-shot.jpg'
+import timer from './assets/timer-shot.jpg'
 import Background from './Background'
 import Nav from './Nav'
 import './App.css';
@@ -24,10 +25,14 @@ class Projects extends Component {
                             <img src={wisi} className="project-shot" />
                         </div>
                         <div className="project" id="project2">
-                        <img src={homept} className="project-shot" />
+                            <img src={homept} className="project-shot" />
                         </div>
-                        <div className="project" id="project3"></div>
-                        <div className="project" id="project4"></div>
+                        <div className="project" id="project3">
+                            <img src={killa} className="project-shot" />
+                        </div>
+                        <div className="project" id="project4">
+                            <img src={timer} className="project-shot" />
+                        </div>
                     </div>
                 </div>
             </div>

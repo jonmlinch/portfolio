@@ -59,7 +59,7 @@ class Nav extends Component {
                 <Link to="/home"><img src={logo} alt='jl logo'  /></Link>
               </div>
               <span className="hamburger">
-                <i className="material-icons" onMouseOver={this.handleNavbar}>{this.state.icon}</i>
+                <i className="material-icons" onClick={this.handleNavbar}>{this.state.icon}</i>
               </span>
             </div>
         </nav>

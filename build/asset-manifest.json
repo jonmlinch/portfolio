@@ -1,10 +1,15 @@
 {
-  "main.css": "static/css/main.2725f3ad.css",
-  "main.css.map": "static/css/main.2725f3ad.css.map",
-  "main.js": "static/js/main.56075cfb.js",
-  "main.js.map": "static/js/main.56075cfb.js.map",
+  "main.css": "static/css/main.3ff9718a.css",
+  "main.css.map": "static/css/main.3ff9718a.css.map",
+  "main.js": "static/js/main.6824267e.js",
+  "main.js.map": "static/js/main.6824267e.js.map",
+  "static/media/JLinch-resume-oct-22-2018.pdf": "static/media/JLinch-resume-oct-22-2018.8bb4456e.pdf",
   "static/media/dust_scratches.png": "static/media/dust_scratches.608ab5fe.png",
-  "static/media/jlinchResume-9-26-18.pdf": "static/media/jlinchResume-9-26-18.0bf032d1.pdf",
-  "static/media/misty.jpg": "static/media/misty.f690ca1e.jpg",
-  "static/media/porfolio-logo-border.svg": "static/media/porfolio-logo-border.23268dcb.svg"
+  "static/media/homept-shot.jpg": "static/media/homept-shot.9c3d8d1b.jpg",
+  "static/media/killa-shot.jpg": "static/media/killa-shot.9aac9777.jpg",
+  "static/media/misty-wide.jpg": "static/media/misty-wide.76aa0211.jpg",
+  "static/media/porfolio-logo-border.svg": "static/media/porfolio-logo-border.23268dcb.svg",
+  "static/media/portfolio-stroke.svg": "static/media/portfolio-stroke.950d2a50.svg",
+  "static/media/timer-shot.jpg": "static/media/timer-shot.68267bf8.jpg",
+  "static/media/wisi-shot.jpg": "static/media/wisi-shot.d793ba26.jpg"
 }

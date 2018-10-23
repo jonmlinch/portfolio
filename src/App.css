@@ -226,6 +226,10 @@ a {
   position: relative;
 }
 
+.project-link {
+  display: block;
+}
+
 #project1 {
   background-color: blue;
 }

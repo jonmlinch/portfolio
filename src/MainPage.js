@@ -17,6 +17,13 @@ class MainPage extends Component {
       <div>
         <Background />
         <Nav />
+        <div className="home-container">
+            <div className="greeting">
+                <h1 className="hi">Hi, I'm <span className="name">Jon</span>! Nice to meet you.</h1>
+                <hr />
+                <h2 className="description">I'm a full stack developer, educator, and just plain nice guy.</h2>
+            </div>
+        </div>
       </div>
     );
   }

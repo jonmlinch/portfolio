@@ -26,6 +26,8 @@ a {
 .navbar {
   display: grid;
   grid-template-columns: 50vw 50vw;
+  /* height: 5vh; */
+  overflow: visible;
 }
 
 .top-image {
@@ -38,7 +40,7 @@ a {
 }
 
 .logo {
-  width: 10vw;
+  width: 8vw;
   height: auto;
   margin-left: 2vw;
   margin-top: 1vw;
@@ -57,7 +59,7 @@ a {
 .about-container {
   display: grid;
   grid-template-columns: 20% 40% 40%;
-  grid-template-rows: 50% 50%;
+  /* grid-template-rows: 50% 50%; */
   align-items: center;
 }
 
@@ -68,22 +70,31 @@ a {
 }
 
 .misty {
-  /* position: relative; */
   width: 100%;
-  /* object-fit: cover; */
   margin-top: -15%;
 }
 
 .clever-words {
   grid-area: 1/2/2/3;
-  margin-top: 20%;
   align-self: start;
-  color: #171717;
+  margin-top: 10%;
   z-index: 1;
+  background-color: rgba(189, 190, 195, 0.5);
+  box-shadow: 0 0 50px 50px rgba(189, 190, 195, 0.5);
 }
 
 .words {
   font-size: 1.25em;
+  color: #171717;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-container {
+    grid-template-rows: 50vh 50vh
+  }
+  .words {
+    font-size: 0.75em;
+  }
 }
 
 .overlay {
@@ -157,13 +168,15 @@ a {
 .home-container {
   display: grid;
   grid-template-columns: 25vw 50vw 25vw;
-  grid-template-rows: 55vh 40vh;
+  /* grid-template-rows: 55vh 40vh; */
+  margin-top: 20vh;
   justify-items: center;
   align-items: center;
 }
 
 .greeting {
   grid-column-start: 2;
+  align-self: center;
 }
 
 .hi{
@@ -220,7 +233,8 @@ a {
   height: 250px;
   margin: 1vw;
   border-radius: 2%;
-  border: 1px solid #171717;
+  border: 1px solid #818181;
+  box-shadow: -2px 2px 2px #818181;
   align-content: center;
   overflow: hidden;
   position: relative;
@@ -230,23 +244,7 @@ a {
   display: block;
 }
 
-#project1 {
-  background-color: blue;
-}
-
 .project-shot {
   width: 100%;
   position: absolute;
-}
-
-#project2 {
-  background-color: red;
-}
-
-#project3 {
-  background-color: white;
-}
-
-#project4 {
-  background-color: orange;
 }

@@ -9,13 +9,18 @@ class AboutMe extends Component {
   render() {
     return (
         <div>
-            <Background />
             <Nav />
             <div className="about-container">
-                <div className="clever-words">
-                    <p className="words">This is where I'm going to say some really clever things about myself. I might talk about how funny I am despite my gloomy looking color scheme. Or I could talk about my prior role as a teacher and how I left that profession because it made me feel like the my gloomy site suggests. I could then talk about how I'm finding a new side of me a developer who likes to makw things that hopefully look good but also provide some sort of useful purpose.
+                <div className="clever-words" id="clever-words">
+                    <p className="words">
+                        First off, thank you for visiting my site! I'm happy to have you here and I hope you enjoy your experience.
                     </p>
-                    <p className="words">Here I will talk about my pursuit of a new career. I will talk about either previous projects that I created or I will talk about current projects that I'm working on. Maybe I should start a blog?</p>
+                    <p className="words">
+                        Before I learned the wonders of "Hello, World!", I was a middle school science teacher and a wildlife biologist. I had a lot of fun doing cool experiments (Ask me about the Iodine Clock Reaction, sometime.) and I love to regale folks with incredible tales of wolves, bears, and awkward encounters with people in the woods. Eventually, I realized I wanted to do more than experience cool things, I also wanted to make cool things. That's when I found programming...
+                    </p>
+                    <p className="words">
+                        Now, I'm a full stack web developer with a lean toward the frontend. My biggest interest is in making things that are both fun and easy to use. Check out my project section to see some cools stuff I've been working on!
+                    </p>
                 </div>
                 <div className="misty-container">
                     <img src={misty} alt="looking at the fog" className="misty" />

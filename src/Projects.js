@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import scratches from './assets/dust_scratches.png'
 import wisi from './assets/wisi-shot.jpg'
 import homept from './assets/homept-shot.jpg'
 import killa from './assets/killa-shot.jpg'
@@ -12,7 +13,7 @@ class Projects extends Component {
   render() {
     return (
         <div>
-            <Background />
+            <Background image={scratches} />
             <Nav />
             <div className="project-container">
                 <div className="project-display">

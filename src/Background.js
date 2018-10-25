@@ -13,7 +13,7 @@ class App extends Component {
         transitionAppearTimeout={1000}
         transitionEnter={false}
         transitionLeaveTimeout={1000}>
-          <img src={background} alt="dust-scratches" className="background-scratches" />
+          <img src={this.props.image} alt="dust-scratches" className="background-scratches" />
         </ReactCSSTransitionGroup>
       </div>
     );

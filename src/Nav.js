@@ -46,7 +46,7 @@ class Nav extends Component {
     return (
       <div>
         <div id="myNav" className="overlay" style={{width: this.state.width}}>
-        <div class="overlay-content">
+        <div className="overlay-content">
           <Link to="/home">Home |</Link>
           <Link to="/about">About |</Link>
           <Link to="/projects">Projects |</Link>

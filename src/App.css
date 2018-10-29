@@ -245,6 +245,7 @@ a {
 
 .project-link {
   display: block;
+  z-index: 0;
 }
 
 .project-shot {
@@ -262,4 +263,8 @@ a {
 
 .project:hover .project-overlay {
   width: 100%;
+}
+
+.project-tech {
+  margin: 0;
 }

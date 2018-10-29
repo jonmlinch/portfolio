@@ -25,21 +25,33 @@ class Projects extends Component {
                         <div className="project" id="project1">
                             <a className="project-link" href="https://wisi-app.herokuapp.com/">
                                 <img src={wisi} className="project-shot" />
+                                <div className="project-overlay">
+
+                                </div>
                             </a>
                         </div>                        
                         <div className="project" id="project2">
                             <a className="project-link" href="https://homept.herokuapp.com/">
                                 <img src={homept} className="project-shot" />
+                                <div className="project-overlay">
+                                    
+                                </div>
                             </a>
                         </div>
                         <div className="project" id="project3">
                             <a className="project-link" href="https://jonmlinch.github.io/game-project/">
                                 <img src={killa} className="project-shot" />
+                                <div className="project-overlay">
+                                    
+                                </div>
                             </a>
                         </div>
                         <div className="project" id="project4">
                             <a className="project-link" href="https://expo.io/@surfjon2/treat-yo-self">
                                 <img src={timer} className="project-shot" />
+                                <div className="project-overlay">
+                                    
+                                </div>
                             </a>
                         </div>
                     </div>

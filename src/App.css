@@ -88,12 +88,10 @@ a {
   color: #171717;
 }
 
-@media only screen and (max-width: 800px) {
-  .about-container {
-    grid-template-rows: 50vh 50vh
-  }
-  .words {
-    font-size: 0.75em;
+@media only screen and (max-width: 1090px) {
+  .clever-words {
+    grid-area: 2/1/2/4;
+    margin: 10%;
   }
 }
 
@@ -233,11 +231,16 @@ a {
   height: 250px;
   margin: 1vw;
   border-radius: 2%;
-  border: 1px solid #818181;
-  box-shadow: -2px 2px 2px #818181;
+  border: 1px solid #171717;
+  box-shadow: 0px 0px 3px 3px #232323;
   align-content: center;
   overflow: hidden;
   position: relative;
+  transition: 0.3s;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 2px 5px #818181;
 }
 
 .project-link {
@@ -247,4 +250,16 @@ a {
 .project-shot {
   width: 100%;
   position: absolute;
+}
+
+.project-overlay {
+  background-color: rgba(23, 23, 23, 0.7);
+  width: 0%;
+  height: 250px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.project:hover .project-overlay {
+  width: 100%;
 }

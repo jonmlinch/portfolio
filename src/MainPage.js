@@ -5,7 +5,6 @@ import posed from 'react-pose';
 import SplitText from 'react-pose-text'
 import Nav from './Nav'
 import Background from './Background'
-import github from 'simple-icons/icons/github.svg'
 import './App.css';
 
 const charPose = {

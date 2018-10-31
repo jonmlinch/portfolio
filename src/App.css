@@ -44,7 +44,6 @@ a {
   height: auto;
   margin-left: 2vw;
   margin-top: 1vw;
-  /* position: absolute; */
   z-index: 1;
 }
 
@@ -59,7 +58,6 @@ a {
 .about-container {
   display: grid;
   grid-template-columns: 20% 40% 40%;
-  /* grid-template-rows: 50% 50%; */
   align-items: center;
 }
 
@@ -166,7 +164,6 @@ a {
 .home-container {
   display: grid;
   grid-template-columns: 25vw 50vw 25vw;
-  /* grid-template-rows: 55vh 40vh; */
   margin-top: 20vh;
   justify-items: center;
   align-items: center;
@@ -179,18 +176,20 @@ a {
 
 .hi{
   text-align: center;
-  color: #f8f8f8;
+  color: rgba(23, 23, 23, 0.7);
   font-size: 40px;
+  text-shadow: 0px -1px 1px rgba(129, 129, 129, 0.7);
 }
 
 .name {
-  color: #bada55;
-  text-shadow: 0px -1px 1px #171717;
+  color: rgba(76, 187, 23, 1);
+  text-shadow: 1px 0px 1px #171717;
 }
 
 .description {
   text-align: center;
-  color: #f8f8f8;
+  color: rgba(23, 23, 23, 0.7);
+  /* text-shadow: 0px -1px 1px #818181; */
 }
 
 .project-container {
@@ -231,8 +230,8 @@ a {
   height: 250px;
   margin: 1vw;
   border-radius: 2%;
-  border: 1px solid #171717;
-  box-shadow: 0px 0px 3px 3px #232323;
+  /* border: 1px solid #171717;
+  box-shadow: 0px 0px 3px 3px #232323; */
   align-content: center;
   overflow: hidden;
   position: relative;
@@ -257,6 +256,7 @@ a {
   background-color: rgba(23, 23, 23, 0.7);
   width: 0%;
   height: 250px;
+  margin: 0;
   position: relative;
   transition: 0.5s;
 }

@@ -27,7 +27,7 @@ class MainPage extends Component {
   render() {
     return (
       <div>
-        <Background image={scratches}/>
+        {/* <Background image={scratches}/> */}
         <Nav />
         <div className="home-container">
           <div className="greeting">

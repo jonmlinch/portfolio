@@ -41,7 +41,7 @@
             to {
                 stroke-dashoffset: 0;
                 opacity: 1;
-                fill: #000
+                fill: rgba(23, 23, 23, 0.8)
             }
         }
 
@@ -68,10 +68,10 @@
             stroke: #fff;
         } -->
 
-        .letter:hover {
+        <!-- .letter:hover {
             fill: #000;
             stroke: #fff
-        }
+        } -->
 
         .cls-2 {
         fill:none;

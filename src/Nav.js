@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Link, NavLink} from 'react-router-dom'
 import logo from './assets/porfolio-logo-border.svg';
 import resume from './assets/JLinch-resume-oct-22-2018.pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faLinkedin, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
 import Overdrive from 'react-overdrive'
 import './App.css';
 
@@ -11,6 +13,7 @@ class Nav extends Component {
     this.state = {
       width: "0%",
       icon: "menu",
+      color: "rgba(23, 23, 23, 0.7)",
       navigate: false
     }
   }
@@ -28,6 +31,7 @@ class Nav extends Component {
     this.setState({
       width: "100%",
       icon: "close",
+      color: "rgba(129, 129, 129, 0.7)",
       navigate: true
     })
   }
@@ -37,6 +41,7 @@ class Nav extends Component {
     this.setState({
       width: "0%",
       icon: "menu",
+      color: "rgba(23, 23, 23, 0.7)",
       navigate: false
     })
   }
@@ -51,6 +56,10 @@ class Nav extends Component {
           <Link to="/about">About |</Link>
           <Link to="/projects">Projects |</Link>
           <a href={resume} target="_blank">Resume |</a>
+          <div className="icon-container">
+            <a href="http://www.linkedin.com/in/jonmlinch" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="icons" /></a>
+            <a href="https://github.com/jonmlinch" target="_blank"><FontAwesomeIcon icon={faGithubSquare} className="icons" /></a>
+          </div>
         </div>
       </div>
         <nav>
@@ -58,7 +67,7 @@ class Nav extends Component {
               <div className="logo">
                 <Link to="/home"><img src={logo} alt='jl logo'  /></Link>
               </div>
-              <span className="hamburger">
+              <span className="hamburger" style={{color: this.state.color}}>
                 <i className="material-icons" onClick={this.handleNavbar}>{this.state.icon}</i>
               </span>
             </div>

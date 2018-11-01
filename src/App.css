@@ -122,6 +122,22 @@ a {
   transition: 0.3s;
 }
 
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons {
+  color: #818181;
+  margin: 1vw;
+  display: inline;
+}
+
+.icons:hover {
+  color: #f8f8f8;
+}
+
 .overlay a:hover, .overlay a:focus {
   color: #f8f8f8;
 }
@@ -145,9 +161,9 @@ a {
 .hamburger {
   font-size:30px;
   justify-self: end;
-  cursor:pointer;
-  color: #f8f8f8;
-  text-shadow: -2px 2px 2px #171717;
+  cursor: pointer;
+  color: rgba(23, 23, 23, 0.7);
+  /* text-shadow: -2px 2px 2px rgba(129, 129, 129, 0.7); */
   z-index: 2;
   margin-right: 5%;
 }
@@ -182,8 +198,8 @@ a {
 }
 
 .name {
-  color: rgba(76, 187, 23, 1);
-  text-shadow: 1px 0px 1px #171717;
+  color: #0b6623;
+  text-shadow: 1px 0px 1px rgba(129, 129, 129, 0.7);
 }
 
 .description {
@@ -214,7 +230,7 @@ a {
 }
 
 .line-break {
-  border-color: #bada55;
+  border-color: #0b6623;
 }
 
 .project-flex-container {

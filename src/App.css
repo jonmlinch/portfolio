@@ -209,7 +209,7 @@ a {
 
 .project-container {
   display: grid;
-  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-columns: 10vw 80vw 10vw;
   justify-items: center;
 }
 
@@ -235,6 +235,7 @@ a {
 
 .project-flex-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
@@ -242,8 +243,8 @@ a {
 }
 
 .project {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   width: 400px;
   height: 250px;
   margin: 1vw;
@@ -276,6 +277,13 @@ a {
 
 .project-overlay {
   background-color: rgba(23, 23, 23, 1);
+  /* display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 250px;
+  
+  justify-content: center;
+  align-content: center; */
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -285,6 +293,16 @@ a {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* .tag-container {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+} */
 
 .project:hover .project-overlay {
   /* width: 100%;

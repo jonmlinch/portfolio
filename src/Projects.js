@@ -23,14 +23,15 @@ class Projects extends Component {
                     </div>
                     <div className="project-flex-container">
                         <div className="project" id="project1">
-                            
-                                <img src={wisi} className="project-shot" />
+                            <img src={wisi} className="project-shot" />
+                            <div className="tag-container">
                                 <div className="project-overlay">
                                     <div className="project-tech">HTML/CSS/Javascript</div>
                                 </div>
                                 <div className="project-overlay">
                                     <a className="project-link" href="https://wisi-app.herokuapp.com/">Demo</a>
                                 </div>
+                            </div>
                         </div>                        
                         <div className="project" id="project2">
                             <a className="project-link" href="https://homept.herokuapp.com/">

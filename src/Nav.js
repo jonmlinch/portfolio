@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link, NavLink} from 'react-router-dom'
-import logo from './assets/porfolio-logo-border.svg';
+import logo from './assets/portfolio-stroke.svg';
 import resume from './assets/JLinch-resume-oct-22-2018.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLinkedin, faGithubSquare} from '@fortawesome/free-brands-svg-icons'

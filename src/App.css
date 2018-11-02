@@ -239,83 +239,71 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 250px;
 }
 
 .project {
-  /* display: flex;
-  flex-direction: row; */
   width: 400px;
   height: 250px;
   margin: 1vw;
   border-radius: 2%;
-  /* border: 1px solid #171717;
-  box-shadow: 0px 0px 3px 3px #232323; */
   align-content: center;
   overflow: hidden;
   position: relative;
   transition: 0.3s;
 }
 
-.project:hover {
-  box-shadow: 0px 0px 2px 5px #818181;
-}
-
-/* .project-link {
-  display: block;
-  z-index: 0;
-} */
 
 .project-shot {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
-  /* backface-visibility: hidden; */
+  transition: .7s ease;
 }
 
 .project-overlay {
-  background-color: rgba(23, 23, 23, 1);
-  /* display: flex;
-  flex-direction: row;
-  width: 400px;
-  height: 250px;
-  
-  justify-content: center;
-  align-content: center; */
-  transition: .5s ease;
-  opacity: 0;
+  background-color: rgba(23, 23, 23, 0.3);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 90% 10%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease;
 }
 
-/* .tag-container {
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  height: 250px;
-  position: absolute;
-  justify-content: center;
-  align-content: center;
-} */
-
 .project:hover .project-overlay {
-  /* width: 100%;
-  height: 250px; */
   opacity: 1;
 }
 
 .project:hover .project-shot {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transform: scale(1.05)
 }
 
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 2/ span 1;
+}
+
 .project-tech {
-  margin: 10%;
   color: white;
+  background-color: red;
+  display: inline;
+  margin: 4%
+}
+
+.project-link {
+  text-decoration: underline;
+}
+
+.project-link-list {
+  grid-column: 2/ span 1;
+  grid-row: 2/ span 1;
 }

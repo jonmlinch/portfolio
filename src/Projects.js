@@ -24,12 +24,15 @@ class Projects extends Component {
                     <div className="project-flex-container">
                         <div className="project" id="project1">
                             <img src={wisi} className="project-shot" />
-                            <div className="tag-container">
-                                <div className="project-overlay">
-                                    <div className="project-tech">HTML/CSS/Javascript</div>
+                            <div className="project-overlay">
+                                <div className="project-tech-list">
+                                    <div className="project-tech">HTML/CSS/JS</div>
+                                    <div className="project-tech">Node.js</div>
+                                    <div className="project-tech">Express.js</div>
+                                    <div className="project-tech">SQL</div>
                                 </div>
-                                <div className="project-overlay">
-                                    <a className="project-link" href="https://wisi-app.herokuapp.com/">Demo</a>
+                                <div className="project-link-list">
+                                <a className="project-link" href="https://wisi-app.herokuapp.com/">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/WISI-Wildlife-Sightings-App">Code</a>
                                 </div>
                             </div>
                         </div>                        

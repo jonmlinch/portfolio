@@ -26,10 +26,10 @@ class Projects extends Component {
                             <img src={wisi} className="project-shot" />
                             <div className="project-overlay">
                                 <div className="project-tech-list">
-                                    <div className="project-tech">HTML/CSS/JS</div>
-                                    <div className="project-tech">Node.js</div>
-                                    <div className="project-tech">Express.js</div>
-                                    <div className="project-tech">SQL</div>
+                                    <p className="project-tech">HTML/CSS/JS</p>
+                                    <p className="project-tech">Node.js</p>
+                                    <p className="project-tech">Express.js</p>
+                                    <p className="project-tech">SQL</p>
                                 </div>
                                 <div className="project-link-list">
                                 <a className="project-link" href="https://wisi-app.herokuapp.com/">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/WISI-Wildlife-Sightings-App">Code</a>

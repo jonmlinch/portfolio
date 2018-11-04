@@ -40,50 +40,44 @@ class Projects extends Component {
                             </div>
                         </div>                        
                         <div className="project" id="project2">
-                            <a className="project-link" href="https://homept.herokuapp.com/">
-                                <img src={homept} className="project-shot" />
-                                <div className="project-overlay2">
-                                    <div className="project-tech-list">
-                                        <p className="project-tech">React-Materialize</p>
-                                        <p className="project-tech">React.js</p>
-                                        <p className="project-tech">Node.js</p>
-                                        <p className="project-tech">Express.js</p>
-                                        <p className="project-tech">MongoDB</p>
-                                    </div>
-                                    <div className="project-link-list">
-                                    <a className="project-link" href="https://homept.herokuapp.com/" target="_blank">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/HomePT-frontend" target="_blank"> Frontend Code</a> | <a className="project-link" href="https://github.com/jonmlinch/HomePT-backend" target="_blank">Backend Code</a> 
-                                    </div>
+                            <img src={homept} className="project-shot" />
+                            <div className="project-overlay2">
+                                <div className="project-tech-list">
+                                    <p className="project-tech">React-Materialize</p>
+                                    <p className="project-tech">React.js</p>
+                                    <p className="project-tech">Node.js</p>
+                                    <p className="project-tech">Express.js</p>
+                                    <p className="project-tech">MongoDB</p>
                                 </div>
-                            </a>
+                                <div className="project-link-list">
+                                <a className="project-link" href="https://homept.herokuapp.com/" target="_blank">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/HomePT-frontend" target="_blank"> Frontend Code</a> | <a className="project-link" href="https://github.com/jonmlinch/HomePT-backend" target="_blank">Backend Code</a> 
+                                </div>
+                            </div>
                         </div>
                         <div className="project" id="project3">
-                            <a className="project-link" href="https://jonmlinch.github.io/game-project/">
-                                <img src={killa} className="project-shot" />
-                                <div className="project-overlay">
-                                    <div className="project-tech-list">
-                                        <p className="project-tech">HTML</p>
-                                        <p className="project-tech">CSS</p>
-                                        <p className="project-tech">JS</p>
-                                        <p className="project-tech">Phaser</p>
-                                    </div>
-                                    <div className="project-link-list">
-                                    <a className="project-link" href="https://jonmlinch.github.io/game-project/" target="_blank">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/game-project" target="_blank">Code</a>
-                                    </div>
+                            <img src={killa} className="project-shot" />
+                            <div className="project-overlay2">
+                                <div className="project-tech-list">
+                                    <p className="project-tech">HTML</p>
+                                    <p className="project-tech">CSS</p>
+                                    <p className="project-tech">JS</p>
+                                    <p className="project-tech">Phaser</p>
                                 </div>
-                            </a>
+                                <div className="project-link-list">
+                                <a className="project-link" href="https://jonmlinch.github.io/game-project/" target="_blank">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/game-project" target="_blank">Code</a>
+                                </div>
+                            </div>
                         </div>
                         <div className="project" id="project4">
-                            <a className="project-link" href="https://expo.io/@surfjon2/treat-yo-self">
-                                <img src={timer} className="project-shot" />
-                                <div className="project-overlay">
-                                    <div className="project-tech-list">
-                                        <p className="project-tech">React Native</p>
-                                    </div>
-                                    <div className="project-link-list">
-                                    <a className="project-link" href="https://expo.io/@surfjon2/treat-yo-self" target="_blank">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/treat-yo-self" target="_blank">Code</a>
-                                    </div>
+                            <img src={timer} className="project-shot" />
+                            <div className="project-overlay2">
+                                <div className="project-tech-list">
+                                    <p className="project-tech">React Native</p>
                                 </div>
-                            </a>
+                                <div className="project-link-list">
+                                <a className="project-link" href="https://expo.io/@surfjon2/treat-yo-self" target="_blank">Demo</a> | <a className="project-link" href="https://github.com/jonmlinch/treat-yo-self" target="_blank">Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

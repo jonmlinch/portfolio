@@ -162,7 +162,6 @@ a {
   justify-self: end;
   cursor: pointer;
   color: rgba(23, 23, 23, 0.7);
-  /* text-shadow: -2px 2px 2px rgba(129, 129, 129, 0.7); */
   z-index: 2;
   margin-right: 5%;
 }
@@ -204,7 +203,6 @@ a {
 .description {
   text-align: center;
   color: rgba(23, 23, 23, 0.7);
-  /* text-shadow: 0px -1px 1px #818181; */
 }
 
 .project-container {
@@ -266,7 +264,7 @@ a {
   position: absolute;
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 20% 20% 60%;
+  grid-template-rows: 15% 25% 60%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -276,11 +274,11 @@ a {
 }
 
 .project-overlay2 {
-  background-color: rgba(23, 23, 23, 0.7);
+  background-color: rgba(23, 23, 23, 0.8);
   position: absolute;
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 20% 20% 60%;
+  grid-template-rows: 16% 24% 60%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -304,7 +302,8 @@ a {
   padding: 5px;
   background-color: rgba(129, 129, 129, 1);
   border-radius: 10px;
-  box-shadow: -1px 1px#171717
+  box-shadow: -1px 1px#171717;
+  align-self: flex-end;
 }
 
 .project-link {
@@ -318,6 +317,8 @@ a {
   align-self: end;
   color: white;
   text-align: center;
+  text-shadow: -1px 1px #171717;
+  margin-bottom: 10%;
 }
 
 .project:hover .project-overlay{

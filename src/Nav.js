@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link, NavLink} from 'react-router-dom'
 import logo from './assets/portfolio-stroke.svg';
-import resume from './assets/JLinch-resume-11-5-2018.pdf';
+import resume from './assets/JLinch-resume-11-5-18.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLinkedin, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
 import Overdrive from 'react-overdrive'
